@@ -7,3 +7,25 @@ body{
     overflow-x:hidden; 
     transition: background 0.3s ease, color 0.3s ease;
 }
+
+body.light-mode .navbar {
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.logo{
+    display:flex; 
+    align-items:center; 
+    gap:12px; 
+    font-size:24px; 
+    font-weight:700; 
+} 
+
+.logo i{
+    color:var(--primary); 
+} 
+
+.logo-img {
+    height: 40px; 
+    width: auto;  
+    object-fit: contain;
+}
