@@ -29,3 +29,71 @@ body.light-mode .navbar {
     width: auto;  
     object-fit: contain;
 }
+
+header{
+    position:fixed; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    z-index:1000; 
+} 
+
+.navbar{
+    width:min(1250px,94%); 
+    margin:auto; 
+    margin-top:18px; 
+    padding:15px 30px; 
+    display:flex; 
+    justify-content:space-between; 
+    align-items:center; 
+    border:1px solid var(--border); 
+    background:rgba(10,18,36,.55); 
+    backdrop-filter:blur(18px); 
+    border-radius:18px; 
+    transition:.35s; 
+} 
+
+body.light-mode .navbar {
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.logo{
+    display:flex; 
+    align-items:center; 
+    gap:12px; 
+    font-size:24px; 
+    font-weight:700; 
+} 
+
+.logo i{
+    color:var(--primary); 
+} 
+
+.logo-img {
+    height: 40px; /* Sesuaikan tingginya dengan navbar Anda */
+    width: auto;  /* Biar proporsi lebar gambar otomatis mengikuti */
+    object-fit: contain;
+}
+
+.nav-links{
+    display:flex; 
+    list-style:none; 
+    gap:35px; 
+} 
+
+.nav-links a{
+    text-decoration:none; 
+    color:inherit; 
+    transition:.3s; 
+    font-weight:500; 
+} 
+
+.nav-links a:hover{
+    color:var(--primary); 
+} 
+
+.menu-btn{
+    display:none; 
+    font-size:24px; 
+    cursor:pointer; 
+}
